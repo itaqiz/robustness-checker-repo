@@ -8,21 +8,6 @@ Most image classifiers are reported with one accuracy number on clean photos. Fa
 cameras and clinic scanners do not produce clean photos, so this project measures how
 accuracy falls as conditions get worse, and tests a "send this to a human" rule.
 
-## Demo
-
-![Stress test at severity 3](docs/screenshot-1.png)
-![Stress test at severity 5](docs/screenshot-2.png)
-![Accuracy vs severity](docs/screenshot-3.png)
-
-The app has two tabs. The first takes an uploaded photo and shows the prediction and
-confidence for the original and for five degraded versions, plus a review verdict.
-The second shows accuracy against severity for the whole test set, stored in SQLite
-and queried with SQL.
-
-The pictures below the verdict are a **stress test**: what the model would say if the
-photo were degraded further. The verdict itself comes from the validated review rule
-described below.
-
 ## Results (900 held-out test images)
 
 Clean accuracy is 99.4% (5 errors in 900). Accuracy at the highest severity (level 5):
