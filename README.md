@@ -55,8 +55,8 @@ clean images, so it was rejected on cost.
 
 ## Run it yourself
 
-    git clone https://github.com/itaqiz/robustness-checker.git
-    cd robustness-checker
+    git clone https://github.com/itaqiz/robustness-checker-repo.git
+    cd robustness-checker-repo
     pip install -r requirements.txt
     python app.py
 
